@@ -43,6 +43,76 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="burger-btn">
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-container">
+                <button type="button" class="mobile-btn-close">
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close">
+                        </use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav-list">
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-nav-link current" href="./index.html">Studio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-link" href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="mobile-contact-menu">
+                    <ul class="mobile-contacts-menu-list">
+                        <li>
+                            <a class="mobile-contacts-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="mobile-contacts-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="mobile-social-link">
+                    <ul class="mobile-social-list">
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="mobile-social">
+                                <svg class="mobile-icons" width=" 16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/" target="_blank" class="mobile-social">
+                                <svg class="mobile-icons" width=" 16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="mobile-social">
+                                <svg class="mobile-icons" width=" 16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" class="mobile-social">
+                                <svg class="mobile-icons" width=" 16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedinsvg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -63,7 +133,7 @@
                 <ul class="features-list">
                     <li class="features-item">
                         <div class="features-icons">
-                            <svg class="" width="64" height="64">
+                            <svg class="icons-mob-tab" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
@@ -75,7 +145,7 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icons">
-                            <svg class="" width="64" height="64">
+                            <svg class="icons-mob-tab" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
@@ -88,7 +158,7 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icons">
-                            <svg class="" width="64" height="64">
+                            <svg class="icons-mob-tab" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
@@ -100,7 +170,7 @@
                     </li>
                     <li class="features-item">
                         <div class="features-icons">
-                            <svg class="" width="64" height="64">
+                            <svg class="icons-mob-tab" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
@@ -120,7 +190,8 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img src="./images/mark.jpg" width="264" height="260" alt="Mark Guerrero" />
+                        <img src="./images/Team-img/mark-mob.jpg" srcset="./images/Team-img/mark-mob-xx.jpg 2x"
+                            width="264" height="260" alt="Mark Guerrero" />
                         <div class="team-container">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -152,13 +223,13 @@
                                             <use href="./images/icons.svg#icon-linkedinsvg"></use>
                                         </svg>
                                     </a>
-
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/tom.jpg" width="264" height="260" alt="Tom Ford" />
+                        <img src="./images/Team-img/tom-mob.jpg" srcset="./images/Team-img/tom-mob-xx.jpg 2x"
+                            width="264" height="260" alt="Tom Ford" />
                         <div class="team-container">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -190,13 +261,13 @@
                                             <use href="./images/icons.svg#icon-linkedinsvg"></use>
                                         </svg>
                                     </a>
-
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/camila.jpg" width="264" height="260" alt="Camila Garcia" />
+                        <img src="./images/Team-img/camila-mob.jpg" srcset="./images/Team-img/camila-mob-xx.jpg 2x"
+                            width="264" height="260" alt="Camila Garcia" />
                         <div class="team-container">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -228,13 +299,13 @@
                                             <use href="./images/icons.svg#icon-linkedinsvg"></use>
                                         </svg>
                                     </a>
-
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/Daniel.jpg" width="264" height="260" alt="Daniel Wilson" />
+                        <img src="./images/Team-img/daniel-mob.jpg" srcset="./images/Team-img/daniel-mob-xx.jpg 2x"
+                            width="264" height="260" alt="Daniel Wilson" />
                         <div class="team-container">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -266,7 +337,6 @@
                                             <use href="./images/icons.svg#icon-linkedinsvg"></use>
                                         </svg>
                                     </a>
-
                                 </li>
                             </ul>
                         </div>
@@ -280,8 +350,20 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/banking-app.jpg" width="360" height="300" alt="banking-app" />
-                            <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/banking-app.jpg 1x, ./images/Portfolio-img/banking-app-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/banking-app-tab.jpg 1x, ./images/Portfolio-img/banking-app-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/banking-app-mob-xx.jpg 2x, ./images/Portfolio-img/banking-app-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/banking-app.jpg" alt="Banking App" width="360">
+                            </picture>
+                            <p class="portfolio-item-text">14 Stylish and User-Friendly App
+                                Design Concepts · Task
                                 Manager
                                 App · Calorie
                                 Tracker App ·
@@ -296,7 +378,19 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/cashless-payment.jpg" width="360" height="300" alt="cashless-payment" />
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/cashless-payment.jpg 1x, ./images/Portfolio-img/cashless-payment-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/cashless-payment-tab.jpg 1x, ./images/Portfolio-img/cashless-payment-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/cashless-payment-mob-xx.jpg 2x, ./images/Portfolio-img/cashless-payment-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/cashless-payment.jpg" alt="Cashless Payment"
+                                    width="360">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie
@@ -312,7 +406,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/meditation-app.jpg" width="360" height="300" alt="meditation-app" />
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/meditation-app.jpg 1x, ./images/Portfolio-img/meditation-app-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/meditation-app-tab.jpg 1x, ./images/Portfolio-img/meditation-app-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/meditation-app-mob-xx.jpg 2x, ./images/Portfolio-img/meditation-app-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/meditation-app.jpg" alt="Meditation App" width="360">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie
@@ -328,7 +433,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/taxi-service.jpg" width="360" height="300" alt="taxi-service" />
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/taxi-service.jpg 1x, ./images/Portfolio-img/taxi-service-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/taxi-service-tab.jpg 1x, ./images/Portfolio-img/taxi-service-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/taxi-service-mob-xx.jpg 2x, ./images/Portfolio-img/taxi-service-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/taxi-service.jpg" alt="Taxi Service" width="360">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie
@@ -344,8 +460,19 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/screen-illustrations.jpg" width="360" height="300"
-                                alt="screen-illustrations" />
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/screen-illustrations.jpg 1x, ./images/Portfolio-img/screen-illustrations-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/screen-illustrations-tab.jpg 1x, ./images/Portfolio-img/screen-illustrations-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/screen-illustrations-mob-xx.jpg 2x, ./images/Portfolio-img/screen-illustrations-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/screen-illustrations.jpg" alt="Screen Illustrations"
+                                    width="360">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie
@@ -361,7 +488,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-item-thumb">
-                            <img src="./images/online-courses.jpg" width="360" height="300" alt="online-courses" />
+                            <picture>
+                                <source media="(min-width: 1158px)"
+                                    srcset="./images/Portfolio-img/online-courses.jpg 1x, ./images/Portfolio-img/online-courses-xx.jpg 2x"
+                                    width="360" height="300" />
+                                <source media="(min-width: 768px) and (max-width: 1157px)"
+                                    srcset="./images/Portfolio-img/online-courses-tab.jpg 1x, ./images/Portfolio-img/online-courses-tab-xx.jpg 2x"
+                                    width="356" height="300" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/Portfolio-img/online-courses-mob-xx.jpg 2x, ./images/Portfolio-img/online-courses-mob.jpg 1x"
+                                    width="288" height="280" />
+                                <img src="./images/Portfolio-img/online-courses.jpg" alt="Online Courses" width="360">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie
@@ -423,8 +561,7 @@
                 </ul>
             </div>
             <div class="subscribe">
-                <label for="footer-email" class="footer-label">
-                    <span class="subscribe-title">Subscribe</span></label>
+                <p class="subscribe-title">Subscribe</p>
                 <form class="footer-form">
                     <input type="email" class="footer-input" name="footer-email" id="footer-email" placeholder="E-mail">
                     <button type="submit" class="footer-btn">Subscribe
@@ -440,9 +577,7 @@
         <div class="modal">
             <button type="button" class="close-button">
                 <svg class="close-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close">
-
-                    </use>
+                    <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -479,12 +614,13 @@
                             <svg class="modal-check-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checksvg"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the
-                        &nbsp;<a href="" class="modal-check-link">Privacy
-                            Policy</a>
+                        </span>
+                        <span class="modal-check-text">
+                            I accept the terms and conditions of the
+                            <a href="" class="modal-check-link">Privacy Policy</a>
+                        </span>
                     </label>
                 </div>
-
                 <button type="submit" class="modal-btn">Send</button>
             </form>
         </div>
