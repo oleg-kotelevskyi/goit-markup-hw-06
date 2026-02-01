@@ -461,6 +461,7 @@ button {
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 96px;
 }
 
 .team-title {
@@ -471,7 +472,6 @@ button {
   text-align: center;
   color: #2e2f42;
   padding-bottom: 72px;
-  padding-top: 96px;
 }
 
 .team-list {
@@ -561,20 +561,21 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+  }
+
   .container {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .team-title {
-    padding-top: 120px;
   }
 
   .team-list {
     flex-wrap: nowrap;
     align-items: center;
     gap: 24px;
-    padding: 0 156px 120px;
+    padding: 0;
+    max-width: none;
   }
 
   .team-item {
@@ -1019,7 +1020,7 @@ button {
 
 .modal {
   width: 288px;
-  min-height: 623px;
+  height: 100%;
   border-radius: 4px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -1029,6 +1030,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 16px 24px 16px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1037,7 +1039,7 @@ button {
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #e7e9fc;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
@@ -1045,14 +1047,19 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 26px;
-  right: 26px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
+  border: none;
   outline: 0;
 }
 
@@ -1066,19 +1073,15 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
-  padding: 0 16px;
-}
-
 .modal-title {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
-  width: auto;
-  margin: 72px 0 16px;
+  width: 100%;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
   color: #2e2f42;
-  padding: 0 16px;
 }
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1149,9 +1152,9 @@ button {
 }
 
 .modal-check:checked + .modal-check-label .modal-check-custom {
-  background-color: #404bbf; /* Фіолетовий фон */
+  background-color: #404bbf;
   border: none;
-  fill: #f4f4fd; /* Біла галочка */
+  fill: #f4f4fd;
 }
 
 .modal-check-label {
@@ -1232,7 +1235,7 @@ button {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
